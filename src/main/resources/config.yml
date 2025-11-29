@@ -1,0 +1,40 @@
+# NeoStats Configuration
+
+# Настройки авто-сохранения
+auto-save:
+  enabled: true
+  interval: 5 # в минутах
+
+# Настройки статистики
+statistics:
+  track-kills: true
+  track-deaths: true
+  track-blocks: true
+  track-mobs: true
+  track-time: true
+  track-joins: true
+  track-advancements: true
+  track-distance: false
+
+# Настройки сообщений
+messages:
+  stats-header: "&6&lNEO STATS &7| &f{player}"
+  stats-line: "&7{stat}: &f{value}"
+  no-permission: "&c⚠ У вас нет прав для этой команды!"
+  player-not-found: "&c⚠ Игрок &f{player} &cне найден!"
+  top-stats-header: "&6&lТОП-10 &7| &f{type}"
+
+# Настройки форматов
+formats:
+  time-format: "дней: {days}, часов: {hours}, минут: {minutes}"
+  kd-format: "%.2f"
+
+# Настройки базы данных (для будущего расширения)
+database:
+  enabled: false
+  type: "sqlite" # или "mysql"
+  host: "localhost"
+  port: 3306
+  name: "neostats"
+  username: ""
+  password: ""

@@ -1,0 +1,27 @@
+name: NeoStats
+version: 1.0.0
+main: com.neostats.neostats.NeoStats
+api-version: "1.16"
+author: NeoStudio
+description: Advanced player statistics tracker
+
+commands:
+  stats:
+    description: View your statistics
+    usage: /stats [player]
+    aliases: [stat, neostats]
+  topstats:
+    description: View top players statistics
+    usage: /topstats <type>
+    aliases: [top, leaderboard]
+
+permissions:
+  neostats.view:
+    description: Allows viewing statistics
+    default: true
+  neostats.others:
+    description: Allows viewing other players statistics
+    default: op
+  neostats.top:
+    description: Allows viewing top statistics
+    default: true
